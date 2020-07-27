@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main right right right'
+    'menu main main right right right';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Measurement Lab</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 14px;"><a href="https://measurementlab.netlify.app/">Main Lab</a>
+    </p>
+  </div>
+  <div class="item3"><h3>Beaker</h3>
+  	<p style="text-align:left; font-size: 14px;">A beaker is device used to measure the <b>volume of a liquid</b> In order to accurately measure the volume, you read the number at the bottom of the <b>meniscus</b>; however, as beakers are typically wider than graduate cylinders, the <b>miniscus is less pronounced</b>.  Beakers are used to measure larger volumes of liquid and are less accurate than graduated cylinders.</p>
+    <p><img src="beaker2" alt="beaker2" width=100% height = auto;>
+  </div>  
+  <div class="item4"><h4>Now you try</h4>
+  	<p style="text-align:left; font-size: 14px;">Read the volume for the beaker below. Answer the questions on your lab report.</p>
+  	<p><img src="beaker1.jpg" alt="beaker1" width=100% height = auto;>
+  	
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
