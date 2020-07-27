@@ -10,10 +10,11 @@
 
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
     'header header header header header header'
-    'menu main main right right right'
-    'menu main main right right right';
+    'menu main main main main right'
+    'menu main main main main right';
   grid-gap: 10px;
   background-color: #BFBFBF;
   padding: 10px;
