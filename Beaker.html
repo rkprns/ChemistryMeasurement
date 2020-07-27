@@ -7,13 +7,13 @@
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 
-
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
-    'header header header header header header'
-    'menu main main right right right'
-    'menu main main right right right';
+    'header header header header header'
+    'menu main main right right'
+    'menu main main right right';
   grid-gap: 10px;
   background-color: #BFBFBF;
   padding: 10px;
