@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Python Lab</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 14px;"><a href="Home.html">Home</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Instructions</h4>
+  	<p style="text-align:left; font-size: 14px;">Below you can see a "perfect" if-then-else loop. Here are things that are needed for the code to run</p>	
+    <ol>
+      <li>To print words, you must put quotations around the words ("word")</li>
+      <li>After each conditional statement, you need a colon (ex: If this:)</li>
+      <li>The action that comes after the conditional statement must be indented by pressing the "tab" key</li>
+    </ol>
+    <iframe src="https://trinket.io/embed/python/cc0e2b26b5" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>  
+  <div class="item4"><h4>Tools</h4>
+  	<p style ="font-size: 14px;"><a href="GraduateCylinder.html"> Graduated cylinder</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Beaker.html"> Beaker</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Flask.html"> Erlenmeyer Flask</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Meter.html"> Meter Stick</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Triple.html"> Triple beam balance</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Scale.html"> Electronic Scale</a>
+    </p>
+    
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
