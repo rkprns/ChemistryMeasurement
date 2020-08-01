@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'header header '
+    'menu main'
+    'menu main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+.button {
+  background-color: #008E9E; /* Green */
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: block;
+  width:100%;
+  height:120px
+  
+}
+
+
+
+
+.button1 {
+  background-color: #F60021; 
+  color: black; 
+}
+.button1:hover {
+  background-color: #9F0016;
+  color: white;
+}
+
+
+
+.button3 {
+  background-color: #3DDA00; 
+  color: black; 
+}
+.button3:hover {
+  background-color: #207200;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Python Lab</h2>
+  </div>
+  
+  
+  <div class="item2">
+  	<div class="btn-group">
+ 	 <button onclick="location.href='PythonLabIfThen.html';" class="button button1" >If-Then-Else Statements</button>
+  	
+	</div>
+  
+  	
+  </div>
+ 
+  <div class="item3">
+  	<div class="btn-group">
+    	
+ 	 <button onclick="location.href='PythonLabForLoops.html';" class="button button3">For Loops</button>
+  	
+  	
+	</div>
+    
+  </div>  
+  
+  	
+ 
+</div>
+
+</body>
+</html>
