@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Indenting and colons</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="PythonLab.html">Main Lab Page</a>
+    <p style ="font-size: 18px;"><a href="PythonLabIfThen.html">If-Then-Else Page</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Instructions</h4>
+  	<p style="text-align:left; font-size: 18px;">A Nested If-Statements is an if-statement within an if-statement. The entire nested if-statement gets indented.  The code below writes "greater than" if a is greater than zero, but adds either "by a lot" or "by a little" depending how much larger than zero a is.  </p>
+    <p style="text-align:left; font-size: 18px;">In the "now you try" section you will see the Nested If-Statement from section 1.  Nested-If statements can go anywhere with the statement (under the If, Elif, or Else). Add a nested if statement to the else section that will print "by a lot" if a<-50, and "by a little otherwise."</p>
+  <p style="text-align:left; font-size: 18px;"><b>Section 1</b></p>
+   <iframe src="https://trinket.io/embed/python/7834d80be3" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <p style="text-align:left; font-size: 18px;"><b>Now You Try</b></p>
+  <iframe src="https://trinket.io/embed/python/909021bd07" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    
+  </div>  
+  
+  	
+ 
+</div>
+
+</body>
+</html>
