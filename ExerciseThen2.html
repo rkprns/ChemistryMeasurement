@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Python Lab: If-Then-Else Statements</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="PythonLabIfThen.html">Main Lab Page</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Exercise 2: Write your own code</h4>
+  	<p style="text-align:left; font-size: 18px;"><b>Instructions:</b>For this final section of them lab your will be writing your own if/then/else statements.  You will code this in the coding box below and then screenshot and both the code and the result.  The requirements for the code are below.</p>
+    <ol style="text-align:left; font-size: 18px;">
+  <li>You must include at least one line that prints a string of text</li>
+  <li>You must include at least one line that prints a string of text AND combines that text with a number</li>
+  <li>You must have an if statement</li>
+  <li>You must have an elif statement</li>
+  <li>You must have an else statement</li>
+  <li>You must have at least one nested if statement</li>
+</ol>
+   
+   <iframe src="https://trinket.io/embed/python/0201d945c2" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>  
+  
+  	
+ 
+</div>
+
+</body>
+</html>
