@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Text</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>HTML Images</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="HTMLintro.html">HTML Introduction</a>
+    </p>
+  </div>
+  <div class="item3"><h4>HTML Images</h4>
+  	<p style="text-align:left; font-size: 18px;">You can insert images anywhere within your <img src="body.png" alt="body" height="14"> element. The syntax for inserting a link is: <img src="image.png" alt="image" height="14">. Because we are using online html editors, we will be linking to other images on the web.  In order to get the image url, right click and select copy image url as shown in the image below.</p>	
+   <p><img src="imageurl.png" alt="imageurl" height="14"></p>
+   <p style="text-align:left; font-size: 18px;"><b>Instructions:</b>Follow the tasks and answer the questions in your lab report</p>
+    <ol style="text-align:left; font-size: 18px;">
+  
+      <li><b>Task 1:</b> In <b>line 3</b> The image and the text are in the same paragraph.  In lines 5/6 the text and the image are in separate paragraphs.  Rewrite line 3 so that the image and the text are in separate paragraphs.</li>
+      <li><b>Task 2:</b>Scroll down in the output box so you can see the output from lines 5/6.  Both images on the page have the <b>same url but are different sizes</b>.  Look at line 6 and determine what is <b>difference</b> between the image code in line 3 and line 6</li>
+      <li><b>Task 3:</b> The width/height are given in pixels.  Change the size of the first image to be 200 pixels. Did the image get smaller or larger?
+      <li><b>Task 3</b>Scroll down to the now you try section and follow the instructions.</li>
+ 
+</ol>
+ <iframe src="https://trinket.io/embed/html/f6d76f968f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <h3>Now You Try</h3>
+<p style="text-align:left; font-size: 18px;"> <b>Instructions:</b>Write code that includes these two things:
+  <ol style="text-align:left; font-size: 18px;">
+    <li>Hyperlinked text that takes me to a website of your choosing</li>
+    <li>Unlinked text that is plain text</li>
+    </ol>
+   
+<h4>Your Code </h4>
+<iframe src="https://trinket.io/embed/html/83caabb7fe" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
