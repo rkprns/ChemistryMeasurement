@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Introduction</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>HTML Introduction</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="ELabs.html">Engineering Labs</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Instructions</h4>
+  	<p style="text-align:left; font-size: 18px;">This lab will lead your through the basics of html coding. The code that created the base webpage can be seen below. Follow the instructions in your assignment and on each page to complete your tasks.</p>	
+     <iframe src="https://trinket.io/embed/html/4ca0e5aab0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <div class="item4"><h4>Lab Parts</h4>
+  	<p style ="font-size: 18px;"><a href="WritingText.html"> Writing Text</a>
+    </p>
+    <p style ="font-size: 18px;"><a href="Indenting"> Indenting</a>
+    </p>
+    <p style ="font-size: 18px;"><a href="IfWithinIf"> Nested If Statements</a>
+    </p>
+    <p style ="font-size: 18px;"><a href="ExerciseThen1.html"> Exercise 1: Fix my Code</a>
+    </p>
+    <p style ="font-size: 18px;"><a href="ExerciseThen2.html"> Exercise 2: Write your own code</a>
+    </p>
+    
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
