@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Body</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>HTML Introduction</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="HTMLintro.html">HTML Introduction</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Head Element</h4>
+  	<p style="text-align:left; font-size: 18px;">The <img src="head.png" alt="head" height="14"> element defines the default for your body elements and the meta data for your website (author, title, etc.). The first element you see in the head section is <img src="title.png" alt="title" height="14">.  This defines the title for the page. This title <b>does not show</b> on the website page, but instead will show as the <b>name of the tab</b>, and will make it easier for your website to be found in a google search. Below you can see the tasks required and the code you will be using. Follow the tasks and answer the questions in your lab report</p>	
+    <ul style="text-align:left; font-size: 18px;">
+  <li><b>Style:</b> Within  <img src="style.png" alt="head" height="14"> is where you can define the background color, default text size/color, and as you get more advanced, you can define the styles for buttons, grids, and lists in this section. Within each style definition, you separate the different commands with a semicolon.</li>
+  <li><b>Task 1:</b> The <img src="bodystyle.png" alt="paragraph" height="14"> is typically where you indicate the color of the background for your website. We will be using the "HEX" format for colors, which is #AAAAAA, where AAAAAA changes based on the color.  You can find the HEX codes for any color at this <a href="https://htmlcolorcodes.com/"link</a> Using the color code link, change the color of the background to a shade of yellow.</li>
+  <li><b><Task 2:</b> Within <img src="headingstyle.png" alt="headingstyle" height="14"> is where you define the defaults for your heading. If you do not define the alignment of the text, the text will align to the left.  Change the text alignment so the text aligns to the <b>right<b>. Then change your heading color to a shade of purple. </li>
+  <li><b><Task 3:</b> With <img src="paragraphstyle.png" alt="pstyle" height="14"> is where you define the defaults for your heading.  Change the paragraph text size to 40px.  What do you notice about the font size? You can set the alignment of the paragraph the same way that you set the alignment of the heading.  Change the alignment to center. 
+  <li><b>Task 4:</b> Scroll down to the now you try section and follow the instructions.
+</ul>
+   <iframe src="https://trinket.io/embed/html/89a0359b3d" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <h3>Now You Try</h3>
+<p style="text-align:left; font-size: 18px;"> <b>Instructions:</b>Write code that will produce a website similar to the one below.  Your color shades do not need to be exact. Set your paragraph font size to 25px.  When you are finished take a screenshot that includes both your code and your webpage and input it into your document</p>
+<h4>Output </h4>
+<iframe src="https://trinket.io/embed/html/10f660162a?outputOnly=true" width="50%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<h4>Your Code </h4>
+<iframe src="https://trinket.io/embed/html/b169dcd012" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
