@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Text</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>HTML Introduction</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="HTMLintro.html">HTML Introduction</a>
+    </p>
+  </div>
+  <div class="item3"><h4>HTML Links</h4>
+  	<p style="text-align:left; font-size: 18px;">You can insert links anywhere within your <img src="body.png" alt="body" height="14"> element. The syntax for inserting a link is: <img src="link.png" alt="link" height="14">. Below you can see the tasks required and the code you will be using. Follow the tasks and answer the questions in your lab report</p>	
+   
+    <ol style="text-align:left; font-size: 18px;">
+  
+      <li><b>Task 1:</b> The link below takes you to google.com.  Change the url so it will take your somewhere else. Copy and paste the n</li>
+ 
+</ol>
+  <iframe src="https://trinket.io/embed/html/df73b7fd8c" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <h3>Now You Try</h3>
+<p style="text-align:left; font-size: 18px;"> <b>Instructions:</b>Write code that will produce a website similar to the one below.  Your color shades do not need to be exact. The paragraphs with larger text than the default have a text size of 40px</b>. The border on paragraph 2 is 4px.  When you are finished take a screenshot that includes both your code and your webpage and input it into your document</p>
+<h4>Output </h4>
+<iframe src="https://trinket.io/embed/html/c42a18a330?outputOnly=true" width="50%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<h4>Your Code </h4>
+<iframe src="https://trinket.io/embed/html/2503ce0b3c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
