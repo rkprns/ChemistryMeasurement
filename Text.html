@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Text</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>HTML Introduction</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="HTMLintro.html">HTML Introduction</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Text Element</h4>
+  	<p style="text-align:left; font-size: 18px;">Within your <img src="heading.png" alt="heading" height="14"> and <img src="paragraph.png" alt="paragraph" height="14"> element you can set styles for individual paragraphs.  The styles you set within your <img src="body.png" alt="body" height="14"> element override the styles your set within your <img src="head.png" alt="head" height="14">. When you start a new element, the styles go back to those defined in the <img src="head.png" alt="head" height="14"> element.  Below you can see the tasks required and the code you will be using. Follow the tasks and answer the questions in your lab report</p>	
+   
+    <ol style="text-align:left; font-size: 18px;">
+  
+  <li><b>Task 1:</b> Line 21 of the code defines a different background color and alignmet for that specific heading.  Using that as an example, change the background in line 23 to a shade of green and the alignment to right. Copy and paste your new line 23 into your lab report.</li>
+  <li><b>Task 2:</b> Line 23 defines a different font color for that specific heading. Change the font color to white and then copy and paste your new line 23 into your lab report. </li>
+  <li><b>Task 3:</b> Line 23 defines a different font color for that specific heading. Change the font color to white and then copy and paste your new line 23 into your lab report. </li>
+  <li><b>Task 4:</b> Line 27 has a paragraph with bold "bolded" and italics "italicized."  Bold just the word "default" and italicize just the world "paragraph." Copy and paste the new line 27 into your lab report<li>
+  <li><b>Task 5:</b> Line 29 has a paragraph with different colored text and a background.  Change the style in line 31 to have a blue shade of text and a red background </li>
+  <li><b>Task 6:</b> Scroll down to the now you try section and follow the instructions.</li>
+</ol>
+  <iframe src="https://trinket.io/embed/html/c0dd12379c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <h3>Now You Try</h3>
+<p style="text-align:left; font-size: 18px;"> <b>Instructions:</b>Write code that will produce a website similar to the one below.  Your color shades do not need to be exact. The paragraphs with larger text than the default have a text size of 40px</b>. The border on paragraph 2 is 4px.  When you are finished take a screenshot that includes both your code and your webpage and input it into your document</p>
+<h4>Output </h4>
+<iframe src="https://trinket.io/embed/html/c42a18a330" width="75%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<h4>Your Code </h4>
+<iframe src="https://trinket.io/embed/html/2503ce0b3c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
