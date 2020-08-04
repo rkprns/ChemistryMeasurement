@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dimensional Analysis Lab</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Dimensional Analysis Lab</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 14px;"><a href="Home.html">Home</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Instructions</h4>
+  	<p style="text-align:left; font-size: 14px;">Find your group number on the right side of the screen.  Follow the link and follow directions.</p>	
+  </div>  
+  <div class="item4"><h4>Tools</h4>
+  	<p style ="font-size: 14px;"><a href="Group1.html"> Group 1</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Group2.html"> Group 2</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Group3.html"> Group 3</a>
+    </p>
+    <p style ="font-size: 14px;"><a href="Group4.html"> Group 4</a>
+    </p>
+    
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
