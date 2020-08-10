@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Floodplain</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Civil Engineering</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="CEhome.html">Civil Engineering Home</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Floodplain</h4>
+  	<p style="text-align:left; font-size: 18px;"><b>Instructions:</b> Below is a code that simulates 100 years of rain events. Complete each task below.</p>
+    <ol style="text-align:left; font-size: 18px;">
+    <li><b>Task 1: </b>Each member of your team shoud click the run button on the code below.</li>
+    <li><b>Task 2: </b>Each member should count how many "no floods," 5 year floods," "10 year floods," 50 year floods," and "100 year floods" they see in their output and fill out the table 1 in their notes.</li>
+    <li><b>Task 3: </b>Share your results with all members of your team and fill out table 2 in your notes.</li>
+    <li><b>Task 4: </b>Answer the questions 1-5 in your notes.</li>
+    </ol>
+    <iframe src="https://trinket.io/embed/python/ba31720684?outputOnly=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
