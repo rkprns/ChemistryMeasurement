@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: left; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    'header header header header header '
+    'left menu menu main main'
+    'left menu menu main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+.button {
+  background-color: #008E9E; /* Green */
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: block;
+  width:100%;
+  height:120px
+  
+}
+
+
+
+
+.button1 {
+  background-color: #C6A7C7; 
+  color: black; 
+}
+.button1:hover {
+  background-color: #520D54;
+  color: white;
+}
+
+
+.button2 {
+  background-color: #520D54; 
+  color: black; 
+}
+.button2:hover {
+  background-color: #520D54;
+  color: white;
+}
+
+
+.button3 {
+  background-color: #C6A7C7; 
+  color: black; 
+}
+.button3:hover {
+  background-color: #520D54;
+  color: white;
+}
+
+.button4 {
+  background-color: #C6A7C7; 
+  color: black; 
+}
+.button4:hover {
+  background-color: #520D54;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Civil Engineering</h2>
+  </div>
+  
+  <div class="item4> <h3>Engineering Home</h3>
+  <p style= "font-size: 18px;"><a href="/ELabs.html">Engineering Labs</p>
+  </div>
+  <div class="item2" >
+  	<div class="btn-group">
+ 	 <button onclick="location.href='watershed.html';" class="button button1" >Watershed Activity</button>
+  	<button onclick="location.href='Transportation.html';" class="button button2">Transportation Activity</button>
+  	
+	</div>
+  
+  	
+  </div>
+ 
+  <div class="item3">
+  	<div class="btn-group">
+    	
+ 	 <button onclick="location.href='Materials.html';" class="button button3">Materials Activity</button>
+  	<button onclick="location.href='Bridge.html';" class="button button4">Bridge Project</button>
+  	
+	</div>
+    
+  </div>  
+  
+  	
+ 
+</div>
+
+</body>
+</html>
