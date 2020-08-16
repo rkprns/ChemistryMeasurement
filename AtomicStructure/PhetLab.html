@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mixtures</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Mixtures, Elements, and Compounds</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="MECHome.html">Mixtures, Elements, Compounds Home</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Mixtures, Elemens, and Compounds Identification</h4>
+   <div style="position: relative; width: 300px; height: 197px;"><a href="https://phet.colorado.edu/sims/build-a-molecule/build-a-molecule_en.jar" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/build-a-molecule/build-a-molecule-600.png" alt="Build a Molecule" style="border: none;" width="300" height="197"/><div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 58px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);"></div><table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 58px;"><tr><td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;">Click to Run</td></tr></table></a></div>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
