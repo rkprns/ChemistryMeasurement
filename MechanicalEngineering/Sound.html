@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sound Lab</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+ 
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;;
+}
+li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+  
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h2>Civil Engineering</h2>
+  </div>
+  <div class="item2"><h4>Menu</h4>
+  	<p style ="font-size: 18px;"><a href="MEhome.html">Mechanical Engineering Home</a>
+    </p>
+  </div>
+  <div class="item3"><h4>Sound Lab</h4>
+  	<p style="text-align:left; font-size: 18px;"><b>Instructions:</b> you will be building two prototypes of constrained-layer damping.  Find 2 members of your group that have access to a cookie sheet or metal sheet</p>
+    <ol style="text-align:left; font-size: 18px;">
+    <li><b>Task 1:</b> Go to this <a href="https://youlean.co/online-loudness-meter/">link</a> to access a sound wave amplitude application.  This application measures the "loudness" of your sound.</li> 
+    <li><b>Task 2:</b> For the 2 members of the group that have a metal sheet, turn the metal sheets so that it is upside down on the floor (preferrably uncarpeted). </li>
+    <img src="pan.jpg" alt="pan" class="center">
+    <li><b>Task 3:</b> Find a metal spoon and drop from should height onto the metal sheet.  Record the maximum sound amplitude in table 1</li>
+    <li><b>Task 4:</b> Using materials in your homes, work together to build a <b>CLD for each pan.</b>  The second design should take into account what you learned from the first design as it will be the "improved model."</li>
+    <img src="model.png" alt="model" class="center">
+     <li><b>Task 5:</b> Record the amplitude for the metal sheets with the CLD table 1</li>
+     <li><b>Task 6:</b> Complete table 1 </li>
+     <li><b>Task 7:</b> Answer Reflection questions </li>
+     <li><b>Task 8:</b> Be prepared to share your designs </li>
+  </div>
+  	
+ 
+</div>
+
+</body>
+</html>
