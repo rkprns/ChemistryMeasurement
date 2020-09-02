@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Components</title>
+<style>
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    'header header header header header'
+    'menu main main main main'
+    'menu main main main main';
+  grid-gap: 10px;
+  background-color: #BFBFBF;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  
+  
+}
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><h1>Ionic vs Covalent Compounds</h1>
+  </div>
+  <div class="item2"><p style= "font-size: 28px;"><b>Menu</b></p>
+  	<p style= "font-size: 18px;"><a href="Topics.html">Main Lab</a>
+    </p>
+  </div>
+  <div class="item3"><p style= "font-size: 28px;"><b>Components</b></p>
+  	
+<p style="text-align:left; font-size: 18px;"><b>Ionic</b> and <b>covalent</b> bonds contain different types of atoms.  In the table below, several ionic and covalent compounds are listed.  What types of atoms combine to form each type of bond? Complete <b>table 2</b> in your notes.</p>
+   <p>
+    <img src="Components.png" alt="Components" width="60%" class="center">
+   </p>
+  </div>
+ 
+</div>
+
+</body>
+</html>
